@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>needlinux-demo</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Bootstrap 4">
+    <meta name="author" content="naem azam at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico"> 
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+
+</head> 
+
+<body class="docs-page">    
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible mr-2 d-xl-none" type="button">
+	                    <span></span>
+	                    <span></span>
+	                    <span></span>
+	                </button>
+	                <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon mr-2" src="assets/images/needlinux.png" alt="logo"><span class="logo-text">Need<span class="text-alt">Linux</span></span></a></div>    
+                </div><!--//docs-logo-wrapper-->
+	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
+	                <div class="top-search-box d-none d-lg-flex">
+		                <form class="search-form">
+				            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+				            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+				        </form>
+	                </div>
+	
+					<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+						<li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li>    
+		                <li class="list-inline-item"><a href="#"><i class="fab fa-linux fa-fw"></i></a></li>
+		                <li class="list-inline-item"><a href="#"><i class="fab fa-ubuntu fa-fw"></i></a></li>
+		            </ul><!--//social-list-->
+		            <a href="menu.html" class="btn btn-primary d-none d-lg-flex">Menu</a>
+	            </div><!--//docs-top-utilities-->
+            </div><!--//container-->
+        </div><!--//branding-->
+    </header><!--//header-->
+    
+    <div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <div class="top-search-box d-lg-none p-3">
+                <form class="search-form">
+		            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+		            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+		        </form>
+            </div>
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+				    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span class="theme-icon-holder mr-2"><i class="fab fa-ubuntu"></i></span>Introduction</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">What is Ubuntu?</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">Ubuntu's history</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">System requirements</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4">Hardware</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-5">Ubuntu’s advantages</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-6">Ubuntu’s disadvantages</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-7">Ubuntu is used for</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-1-8">Video tutorial and practices</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder mr-2"><i class="fas fa-arrow-down"></i></span>Installation</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Ubuntu on Desktop</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-2">Ubuntu on virtualbox</a></li>
+
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder mr-2"><i class="fas fa-cogs"></i></span>Basic Configaration</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1">Section Item 3.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2">Section Item 3.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">Section Item 3.3</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span class="theme-icon-holder mr-2"><i class="fas fa-terminal"></i></span>Basic Commands</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-1">Section Item 4.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-2">Section Item 4.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-3">Section Item 4.3</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span class="theme-icon-holder mr-2"><i class="fas fa-tools"></i></span>Trobleshooting</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1">Section Item 5.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-2">Section Item 5.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-3">Section Item 5.3</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6"><span class="theme-icon-holder mr-2"><i class="fas fa-laptop-code"></i></span>Devlopment</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-1">Ubuntu Desktop for developers</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-2">Section Item 6.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Section Item 6.3</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder mr-2"><i class="fas fa-tablet-alt"></i></span>Top Uses</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Uses of Ubuntu</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-2">Section Item 7.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-3">Section Item 7.3</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-8"><span class="theme-icon-holder mr-2"><i class="fas fa-book-reader"></i></span>Resources</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-1">Section Item 8.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-2">Section Item 8.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-3">Section Item 8.3</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-9"><span class="theme-icon-holder mr-2"><i class="fas fa-lightbulb"></i></span>FAQs</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-1">FAQ Category One</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-2">Section Item 9.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-3">Section Item 9.3</a></li>
+			    </ul>
+
+		    </nav><!--//docs-nav-->
+	    </div><!--//docs-sidebar-->
+	    <div class="docs-content">
+		    <div class="container">
+			    <article class="docs-article" id="section-1">
+				<header class="docs-header">
+					    <h1 class="docs-heading">Introduction <span class="docs-time">Last updated: 2022-06-01</span></h1>
+	                    <p>Ubuntu is a Linux distribution based on Debian and composed mostly of free and open-source software.Ubuntu is officially released in three editions: Desktop, Server, and Core for Internet of things devices and robots. All the editions can run on the computer alone, or in a virtual machine.</p>
+
+                        <section class="docs-section" id="item-1-1">
+						<h2 class="section-heading">What is Ubuntu?</h2>
+						<p>Ubuntu is a very popular Linux distriburion (free open-source OS), deriving its name from a Nguni Bantu word that means “humanity”. It’s also translated as “I am what I am because of who we all are”. Developers thought this name perfectly describes the spirit of all the collaborative work that has enriched this open-source.</p>
+
+                       <p>It works with Linux kernel and supports IA-32, x86-64, ARM64, ARMhf, ppc64le, s390x architectures. It’s available in over 55 different languages.</p>
+
+                        <p>Canonical – a UK-based computer software enterprise with employees in over 30 countries and a vast community around the world – is in charge of Ubuntu’s development. This company supplies support and security updates for every release of Ubuntu. Its profits come just from Ubuntu’s premium services.</p>
+					    </section><!--//section-->
+					
+				     	<section class="docs-section" id="item-1-2">
+						<h2 class="section-heading">Ubuntu's history</h2>
+						<p>Ubuntu was first released in 2004. It’s created on the base of Debian, a previous Linux OS.</p>
+
+                        <p>Debian Linux distro was first released in 1993. Nowadays, it is still a respected OS that has been enhanced through the years. However, in the early years of its creation, users complained about the lack of frequent updates. Some pointed out installing and maintenance were not friendly enough.</P>
+
+                        <p>In 2004, a South African entrepreneur, Mark Shuttleworth, who successfully sold an Internet security company to VeriSign, took Debian to improve it through his recently funded company, Canonical. This way Ubuntu got born.
+
+                        </p>
+			    		</section><!--//section-->
+					
+			    		<section class="docs-section" id="item-1-3">
+						<h2 class="section-heading">System requirements</h2>
+						<p>VUbuntu Core has been designed to have low system requirements and to run on a wide range of hardware, from embedded IoT devices to industrial computing.</p>
+
+                       <p>Minimum requirements are flexible and are entirely dependent on device configuration, but they’re generally contrained to the following:</p>
+
+                       <p><b>core18:</b> 256MB RAM, 256MB storage<br>
+                       <b>core20:</b> 384MB RAM (512MB with UEFI Secure Boot and FDE), 256MB storage </p>
+                       <p>Get in touch to discuss lower or specific requirements.</p>
+
+                       <p>Pre-built images are available for various reference platforms, as listed below:</p>
+
+                       <p><li>Raspberry Pi 2, 3, 4 and Compute Module 3/4</li><li>Qualcomm DragonBoard</li> <li>Intel NUC, generic x86 and x86 KVM</li></p>
+			    		</section>
+					
+			    		<section class="docs-section" id="item-1-4">
+						<h2 class="section-heading">Hardware</h2>
+						<p><li>2 GHz dual core processor</li></p>
+                        <p><li>4 GiB RAM (system memory)</li></p>
+                        <p><li>25 GB of hard-drive space (or USB stick, memory card or external drive but see LiveCD for an alternative approach)</li></p>
+                        <p><li>VGA capable of 1024x768 screen resolution</li></p>
+                        <p><li>Either a CD/DVD drive or a USB port for the installer media</li></p>
+                        <p><li>Internet access is helpful.</li></p>
+
+                        <div class="table-responsive my-4">
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th scope="col"><a href="https://www.kali.org/get-kali/#kali-platforms" class="btn btn-primary"><i class="fas fa-download mr-2"></i> Download Now</a></th>
+										<th scope="col"><a href="#" class="btn btn-secondary"><i class="fas fa-book mr-2"></i> Read PDF Full Guide</a></th>
+										<th scope="col"><a href="#" class="btn btn-info"><i class="fas fa-play-circle mr-2"></i> Watch Video</a></th>
+									</tr>
+								</thead></table>	
+                                  </div>	
+					</section>
+					
+					<section class="docs-section" id="item-1-5">
+						<h2 class="section-heading">Ubuntu’s advantages</h2>
+						<p>Let’s take a look at what exactly makes this OS attractive.</p>
+						
+						<p><h4>It’s open-source</h4></p>
+						
+						<p>Ubuntu’s source code is open and available internationally for people to use, check, and enhance it. Obviously, everything depends on the kind of needs the users have, but with an open-source software, you really can go as far as your imagination goes.</p>
+						
+						<p>Customization is unlimited. You can make Ubuntu really tailored for your purposes.</p>
+						
+						<p><h4>It’s a free OS</h4></p>
+						
+						<p>Talking about tech, we barely find stuff for free. So undoubtedly, the fact this open-source OS can be downloaded easily and for free, is a big advantage both for regular users but even more for all-size enterprises. Think about the percentage of your budget that covers licensing, computer updating, and maintenance. And these are unavoidable expenses if you want to keep your personal and business data secure.</p>
+						
+						
+						<p><h4>It’s secure</h4></P>
+						
+						<p>Its security is linked with the fact that it is open-source. Since the code can be checked, in case of errors or threats, it’s possible to fix them from the root without waiting for too long. Apps work on low privileges and Ubuntu’s built-in firewall helps to reduce risks.</p>
+						<p>Ubuntu develops better security on every new delivery through different additions.</p>
+						<p>The regular official updates, the constant maintenance and development of the OS make troubleshooting errors quite fast.</p>
+						
+						<p><h4>It guarantees support</h4></p>
+						
+						<p>Let’s remember that Canonical and a vast and active community ready to help support Ubuntu. Both work constantly on new updates, new features, more efficiency, fixing bugs, etc.</p.
+						<p>Every six months, a Ubuntu update is launched by Canonical with a 9-month support. These updates commonly offer new capabilities coming from developers of the community and Canonical.</p>
+						<p>Canonical also offers long-term support (LTS) releases every two years. LTS versions are rather enterprise level. And they include a 5-year support, either for desktop or server.</p>
+						<p>And you can get support paying (legal assurance, security fixes, training, and much more). Plans and pricing are available on Canonical’s site.</p>
+						
+						<P><h4>It satisfies regular to advanced users’ needs</h4></p>
+						
+						<p>Ubuntu already includes out-of-the-box solutions for regular users. By default, it supplies the necessary software for them to work (Firefox, Transmission, LibreOffice, VLC, Thunderbird…).</p>
+                        <p>For advanced users, there are thousands of programs available on repositories.</p>
+						
+						<p><h4>It’s fully customizable</h4></p>
+						
+						<p>From the different aspects of the interface to the software, you can change pretty much everything.</p>
+						<p>It works on different platforms and devices
+						   You can set up Ubuntu in virtualized or emulated environments, through containers or a virtual machine. It works on IoT devices, network servers, cloud servers (OpenStack is supported by Ubuntu), robots, and plenty of devices, Mac and Windows computers included.</p>
+						<p>People from different fields, with specific needs, are experimenting all the time with the OS, on a wide variety of platforms and devices.</p>
+						
+						<p><h4>It’s a good training tool</h4></p>
+						
+                        <p>If you are a programmer, site developer or you have a business involved in these kinds of matter, Ubuntu as open-source, can be an ideal tool for training and developing.</p>
+						</section>
+						
+						
+						
+					
+					<section class="docs-section" id="item-1-6">
+						<h2 class="section-heading">Ubuntu’s disadvantages</h2>
+						<p>Now it’s time to go to the other side of the coin, disadvantages users could face trying out Ubuntu OS.</p>
+						
+						<p><h4>It’s a heavy resource taker</h4></p>
+						
+                        <p>It manages system resources quite efficiently. Yet, in comparison with other OS distros, and even other Ubuntu derivatives like Lubuntu and Xubuntu, it takes more resources from the system to work properly.</p>
+
+                        <p><h4>It’s limited for gaming</h4></p>
+						<p>You can’t play all AAA titles but Ubuntu is quickly catching up. You can use Stream or PlayOnLinux to get most of them.</p>
+						   
+					</section>
+	                     <section class="docs-section" id="item-1-7">
+						 
+						<h2 class="section-heading">Ubuntu is used for</h2>
+						 <p>Ubuntu OS can be found on various devices and has many purposes:
+                         <li>webserver
+                         <li>email server
+                         <li>file server
+                         <li>IoT devices
+                         <li>NAS – network-attached storage
+                         <li>DNS server
+                         <li>virtualization
+                         <li>firewall and router
+                         <li>for programming (various languages)
+                         <li>home and office use
+                         <li>TV OS
+                         <li>Mobile OS
+                         <li>And more…</li></P>
+						 <p> There are plenty of uses of Ubuntu and there could be many more use cases.</p>
+					                        <div class="col-md-6 col-12">
+                                <ul class="list list-unstyled pl-0">
+                                    <li><a href="#" class="btn btn-primary">Primary Button</a></li>
+                                   
+                                </ul>
+                            </div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					</section>
+					<section class="docs-section" id="item-1-8">
+						<h2 class="section-heading">Video tutorial and practices</h2>
+						<p>watch Ubuntu online tutorial free on youtube</p>
+					                        <div class="col-md-6 col-12">
+                                <ul class="list list-unstyled pl-0">
+                       <li><a href="#" class="btn btn-info"><i class="fas fa-play-circle mr-2"></i>Watch Video</li></a></li>
+                                   
+                                </ul>
+                            </div>
+					
+			</section>
+			
+			
+			
+			
+			
+					
+				    <!--//section-->
+					
+			    </article>
+			    
+			    <article class="docs-article" id="section-2">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Installation</h1>
+					    <section class="docs-intro">
+						    <p>This is a tutorial to install Ubuntu 20.04 Focal Fossa operating system into your computer. You can do this to computer either with bios or uefi, in either single or dualboot mode and optionally put it into external hard disk drive if you wish. This tutorial should be sufficient for most users and is intended for people without deep knowledge in computing. You will prepare a bootable media, two partitions, and go through ten steps until everything finished. This article recommends you to install on an empty computer with the specification at least Intel or AMD 64-bit processor and 2GB memory and 20GB hard disk partition.</p>
+					        <img class="map" src="assets/images/Ubuntu on Desktop 1.png" height = "500" width = "800"  > </img>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-2-1">
+						<h2 class="section-heading">Ubuntu on Desktop</h2>
+						
+					    <p><h4>#Index</h4></p>
+						<p>
+                        <li>Make installation media.
+                        <li>Prepare partitions.
+                        <li>Boot into LiveCD.
+                        <li>Dualboot preparations.
+                        <li>Booting into LiveCD
+                        <li>Select Language
+                        <li>Select Keyboard Layout
+                        <li>Select No Network
+                        <li>Select Normal Installation without Updates
+                        <li>Select Manual Disk Partitioning
+                        <li>Create Partitions
+                        <li>Determine Bootloader Location
+                        <li>Select Timezone
+                        <li>Create Username and Password
+                        <li>Wait
+                        <li>Finish</li></p>
+						
+						
+						
+						
+						<p><h4>#Make Installation Media</h4></p>
+						<p>The size of Ubuntu ISO is 2.5GigaByte so you will need at least 4GB capacity storage. It is either a DVD disc or a USB Flash Drive. The latter is cheaper today so we will use it as example here. I recommend you use at least an 8GB flash drive as bootable media. To create installation media:
+                        <li>GNOME Disk Utility (recommended) for flash drive
+                        <li>K3B for DVD</li></p>
+						
+						
+						<p><h4>#Prepare Partitions</h4></p>
+						<P>1) A fat32 partition by >=20GB</P>
+						<p>2) A fat32 partition by 1GB</p>
+						<p>3) Only for uefi computer: a fat 32 partition by 100MB.</p>
+						
+                        <img class="map" src="assets/images/Ubuntu on Desktop 2.png" height = "500" width = "800"  > </img>
+						
+						<p><h4>#Dualboot Preparation</h4></p>
+						<p>This preparation is only needed if you planned to install Ubuntu alongside Windows operating system –called dualboot– so that you always choose between both ones every time you turn your computer on. You are supposed to know:
+<li>Backup all your data correctly from your existing Windows operating system to external storage.
+<li>Installation of operating system is not the same as installation of application: the former deletes disk partition, while the latter does not.
+<li>Install new operating system in a new disk partition.
+<li>Do not install Ubuntu operating system in disk partition used by Windows. 
+<li>Ask technician nearby to help you.
+You can do the rest of this tutorial to install Ubuntu in a separate disk partition alongside Windows in another disk partition.</p>
+
+                       <p><h4>#Booting into LiveCD</h4></p>
+					   <p>1.Plug your installation USB into your computer.
+                       <p>2.Power on your computer and enter bios immediately.
+                          <p>3.Change boot order so that USB boots first.
+                          <p>4.Computer boots up your USB.
+                          <p>5.Ubuntu logo displayed on screen.
+                          <6>Press Ctrl+C to cancel disk checking. (This is brand new feature starting from 20.04.)
+                          <p>7.You see Ubuntu desktop with an orange icon Install Ubuntu 20.04 LTS.
+                          <p>8.Double-click the icon.
+                          <p>9.Installer ready.</p>
+						  
+						<p><h3> 1. Select Language</h3></p>
+						<p>On the first page of the installer, select English and click Continue button.</p>
+						<img class="map" src="assets/images/Ubuntu on Desktop 3.png" height = "500" width = "800"  > </img>
+						
+						<p><h3>2. Select Keyboard Layout</h3></p>
+						<p>On the second page, let it be English - United States as you can change this after installation anyway.</p>
+						<img class="map" src="assets/images/Ubuntu on Desktop 4.png" height = "500" width = "800"  > </img>
+						
+						<p><h3>3. Select No Network</h3></p>
+						<p>On the third page, choose "I do not want to connect..." selection and make sure no network connection selected.</p>
+						<img class="map" src="assets/images/Ubuntu on Desktop 5.png" height = "500" width = "800"  > </img>
+						
+						<p><h3>4. Select Normal Installation & Deselect Updates</h3></p>
+						<p>On the fourth page, let it be Normal Installation selected and no selections on Updates whatsoever under it.</p>
+						<img class="map" src="assets/images/Ubuntu on Desktop 6.png" height = "500" width = "800"  > </img>
+						
+						<p><h3>5. Select Manual Disk Partitioning</h3></p>
+						<p>On the fifth page, select Something Else and remember to always choose this manual option.</p>
+                        <img class="map" src="assets/images/Ubuntu on Desktop 7.png" height = "500" width = "800"  > </img>
+                         
+						<p><h3>6. Create Partitions</h3></p>
+						<p>On the sixth page, you will create necessary partitions of your Ubuntu system. Here you need at least two partitions and if your computer is uefi-based you need additionally one partition. They are system, swap, and EFI respectively as mentioned earlier.<P>Create system partition:</p>
+						<li>Select the >=20GB FAT32 partition
+                        <li>Click Change button
+                        <li>Let the size be as is
+                        <li>Set Use as: EXT4 Journaling Filesystem
+                        <li>If you install Ubuntu into flash drive, do not Use as: EXT4 but EXT2 instead.
+                        <li>Set Format the Partition checked
+                        <li>Set Mount point: /
+                        <li>Click OK.</li> </p>
+                        <img class="map" src="assets/images/Ubuntu on Desktop 8.png" height = "500" width = "800"  > </img>
+
+                        <p><h4>6. b. Create Swap Partition</h4></p>
+						<p><li>Select the 1GB FAT32 partition
+                        <li>Click Change button
+                        <li>Set Use as: swap partition
+                        <li>Click OK</li></p>
+                        <img class="map" src="assets/images/Ubuntu on Desktop 9.png" height = "500" width = "800"  > </img>
+
+                        <p><h4>6. c. Create EFI Partition</h4></p>
+						<p>For uefi-based computers only:</p>
+						<p><li>Select the 100MB FAT32 partition
+                           <li>Click Change
+                           <li>Let the size be as is
+                           <li>Set Use as: FAT32
+                           <li>Set Format the partition checked
+                           <li>Set Mount point: /boot/efi
+                           <li>Click OK</li></p>
+						<img class="map" src="assets/images/Ubuntu on Desktop 10.png" height = "500" width = "800"  > </img> 
+						
+						
+                        <p><h3>6. d. Select Bootloader Partition</h4></p>
+						<p>Still on sixth page, set Bootloader: to be the same address as your system partition but without the number for example if your system partition is /dev/sdb3 then you set bootloader at /dev/sdb. Example below sets bootloader at /dev/sdb as the system partition is at /dev/sdb3.</p>
+                        <img class="map" src="assets/images/Ubuntu on Desktop 11.png" height = "500" width = "800"  > </img>
+                        <img class="map" src="assets/images/Ubuntu on Desktop 12.png" height = "200" width = "600"  > </img>
+
+						<p><h3>7. Select Timezone</h3></p>
+						<p>On the seventh page, select your timezone. For example, as I live at GMT+7 in Indonesia, I choose Jakarta city.</p>
+                        <img class="map" src="assets/images/Ubuntu on Desktop 13.png" height = "500" width = "800"  > </img>
+						
+						<p><h3>8. Create Username and Password</h3></p>
+						<p>On the ninth page, create your own username and password. Note that this password will also be your administrator ('sudo') password once Ubuntu installed.</p>
+					    <img class="map" src="assets/images/Ubuntu on Desktop 14.png" height = "500" width = "800"  > </img>
+						
+						
+						<p><h3>9. Wait</h3></p>
+						<p>On the ninth page, you will be entertained by Ubuntu introduction which displays how Ubuntu is to you in a gorgeous slideshow with pictures. In this step you need to wait more or less 10 minutes to finish whole installation procedures complete with all hardware drivers needed.</p>
+                        <img class="map" src="assets/images/Ubuntu on Desktop 15.png" height = "500" width = "800"  > </img>
+						
+						
+						<p><h3>10. Finish</h3></p>
+						<p>Finally, your screen will display Installation Complete which means Ubuntu operating system installation finished successfully.</p>
+                        <img class="map" src="assets/images/Ubuntu on Desktop 16.png" height = "200" width = "600"  > </img>						
+						
+						<div class="table-responsive my-4">
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th scope="col"><a href="https://www.kali.org/get-kali/#kali-platforms" class="btn btn-primary"><i class="fas fa-download mr-2"></i> Download Now</a></th>
+										<th scope="col"><a href="#" class="btn btn-secondary"><i class="fas fa-book mr-2"></i> Read PDF Full Guide</a></th>
+										<th scope="col"><a href="#" class="btn btn-info"><i class="fas fa-play-circle mr-2"></i> Watch Video</a></th>
+									</tr>
+								</thead></table>	
+                                 </div>
+						</section><!--//section-->
+						
+						
+						
+						
+						
+						
+						
+						
+					
+					    <section class="docs-section" id="item-2-2">
+						<h2 class="section-heading">Ubuntu on virtualbox</h2>
+						<p><h2>What is VirtualBox?</h2></p>
+						<p>Oracle VM VirtualBox is a cross-platform virtualization application developed by the Oracle Corporation. It allows users to install operating systems on virtual hard disks such as Windows, macOS, Solaris and Linux.</P>
+
+                        <p>As an example, you can run Windows and Linux on your Mac, run Windows server on your Linux server, or run Linux on your Windows PC while running your other existing applications.</p>
+
+                        <p>Disk space and memory are the only problems that you'll face when installing multiple virtual machines.</p>
+						</section><!--//section-->
+						
+						
+					    <section class="docs-section" id="item-2-2">
+						<p><h2>Why you’ll need it</h2></p>
+						<p><li>Oracle’s VirtualBox is easy to install and use
+                        <li>It's free
+                        <li>You can run and experience any operating system safely
+                        <li>If you’re a developer, VirtualBox can be used as a tool for safely testing your own development projects in multiple OS environments
+                        <li>It can run everywhere from small embedded systems to laptops
+                        <li>It's good for testing and disaster recovery as it can be easily copied, backed-up, and transported between hosts</li></p>
+						</section><!--//section-->
+						 
+						 
+					    <section class="docs-section" id="item-2-2">
+						<p><h2>VirtualBox nnstallation</h2></p>
+						<p>VirtualBox can be downloaded here:</p>
+						<li><a href="#" class="btn btn-primary"><i class="fas fa-download mr-2"></i> Download </a></li>
+						</section><!--//section-->
+						
+						<section class="docs-section" id="item-2-2">
+					    <p><h2>Why ubuntu?</h2></p>
+						<p><li>It's free
+                        <li>Easy customization: The GNOME desktop environment helps you customize easily
+                        <li>It's secure
+                        <li>Ubuntu is open-source
+                        <li>Friendly and supportive community
+                        <li>Low system requirements
+                        <li>According to FOSSBYTES, Ubuntu is the second best Linux distro for programming and developers [2019 Edition]
+                        <li>It's beginner friendly</li></p>
+						</section><!--//section-->
+						
+						
+						<section class="docs-section" id="item-2-2">
+						<p><h2>Setup for ubuntu</h2></p>
+						<p>First, open VirtualBox, then click "New" to create a virtual machine.</p>
+						<img class="map" src="assets/images/New folder/virtualbox 1.png" height = "500" width = "800"  > </img>
+						<p>Enter "Ubuntu" as the name, select "Linux" as the type, and select Ubuntu (64-bit) as the version.</p>
+		                <img class="map" src="assets/images/New folder/virtualbox 2.png" height = "500" width = "800"  > </img>
+
+                        <p>NOTE: Select any amount of memory you wish, but don't add more than 50 percent of your total RAM.</p>
+
+                        <p>Check the "Create a virtual hard disk now" option so we can later define our Ubuntu OS virtual hard disk size.</p>
+						<img class="map" src="assets/images/New folder/virtualbox 3.png" height = "500" width = "800"  > </img>
+						<p>Now, we want to select "VHD (Virtual Hard Disk)".</P>
+						
+						<img class="map" src="assets/images/New folder/virtualbox 4.png" height = "500" width = "800"  > </img>
+						<p>Next, we'll dynamically allocate storage on our physical hard disk.</p>
+						
+						<img class="map" src="assets/images/New folder/virtualbox 5.png" height = "500" width = "800"  > </img>
+						<p>We want to specify our Ubuntu OS's size. The recommended size is 10 GB, but you can increase the size if you wish.</p>
+						
+						<img class="map" src="assets/images/New folder/virtualbox 6.png" height = "500" width = "800"  > </img>
+						<p>After creating a virtual hard disk, you'll see Ubuntu in your dashboard.</P>
+						
+						<img class="map" src="assets/images/New folder/virtualbox 7.png" height = "500" width = "800"  > </img>
+						<p>Now, we have to set up the Ubuntu disk image file (.iso).</p>
+                        <p>The Ubuntu disk image file can be downloaded here: Ubuntu OS download</p>
+						
+						<img class="map" src="assets/images/New folder/virtualbox 8.png" height = "500" width = "800"  > </img>
+						<p>To set up the Ubuntu disk image file, go to settings and follow these steps:</p>
+
+                        <p>1.Click "Storage"</p>
+                        <p>2.In storage devices, click "Empty"</p>
+                        <p>3.In attributes, click the disk image and "Choose Virtual Optical Disk File"</p>
+                        <p>4.Select the Ubuntu disk image file and open it</p>
+						
+						<img class="map" src="assets/images/New folder/virtualbox 9.png" height = "500" width = "800"  > </img>
+						<p>Click OK.</p>
+						<p>Your Ubuntu OS is ready to install in VirtualBox. Let's start!</p>
+						
+						<img class="map" src="assets/images/New folder/virtualbox 10.png" height = "500" width = "800"  > </img>
+						<p>NOTE: Ubuntu VirtualBox installation and actual OS installation steps may vary. This guide helps you to install Ubuntu in VirtualBox only.</p>
+						<p><h2>Let's install Ubuntu!</h2></p>
+						<p>Click Install Ubuntu.</p>
+						
+						<img class="map" src="assets/images/New folder/virtualbox 11.png" height = "500" width = "800"  > </img>
+						<p>Select your keyboard layout.</p>
+						
+						<img class="map" src="assets/images/New folder/virtualbox 12.png" height = "500" width = "800"  > </img>
+						<p>In the "Updates and other software" section, check "Normal installation" and continue.</p>
+						
+						<img class="map" src="assets/images/New folder/virtualbox 13.png" height = "500" width = "800"  > </img>
+						<p>In "Installation type", check "Erase disk and install Ubuntu".</p>
+						
+						<img class="map" src="assets/images/New folder/virtualbox 14.png" height = "500" width = "800"  > </img>
+						<p>Click "Continue".</p>
+						
+						<img class="map" src="assets/images/New folder/virtualbox 15.png" height = "500" width = "800"  > </img>
+						<P>Choose your current location.</p>
+						
+						<img class="map" src="assets/images/New folder/virtualbox 16.png" height = "500" width = "800"  > </img>
+						<P>Now, set up your profile.</p>
+						
+						<img class="map" src="assets/images/New folder/virtualbox 17.png" height = "500" width = "800"  > </img>
+						<P>You'll see Ubuntu installing.</p>
+						<img class="map" src="assets/images/New folder/virtualbox 18.png" height = "500" width = "800"  > </img>
+						<p>After the installation, restart it.</p>
+						
+						<img class="map" src="assets/images/New folder/virtualbox 19.png" height = "500" width = "800"  > </img>
+						<p>After logging in, you'll see the Ubuntu desktop.</p>
+						
+						<img class="map" src="assets/images/New folder/virtualbox 20.png" height = "500" width = "800"  > </img>
+						<P>We have successfully installed Ubuntu in VirtualBox. It's ready to use for your future development projects.</p>
+						
+						
+						
+						<P><h2>Let's verify the installation.</h2></p>
+						<p>Open your terminal (Press Ctrl+Alt+T) and type in the commands below and check if they work.</p>
+						<p>1. pwd: This will print the current working directory</p>
+                        <p>2. ls: This will list all items in your current directory</p>
+					
+						
+						
+						<img class="map" src="assets/images/New folder/virtualbox 21.png" height = "500" width = "800"  > </img>
+						<P>After checking those, power off your machine by using the following command.</p>
+
+
+                        <section class="docs-section" id="item-2-2">
+						<img class="map" src="assets/images/New folder/virtualbox 22.png" height = "500" width = "800"  > </img>
+						<p><h2>Conclusion</h2></p>
+						<p>VirtualBox is free and is a great tool for running multiple operating systems on a single OS. Ubuntu has many benefits. If you're a beginner to Linux, I would recommend you use Ubuntu as it's beginner friendly.</p>
+						<p>Please feel free to let me know if you have any questions.</p>
+						</section><!--//section-->
+						
+						
+						
+						
+						
+					
+					
+			    
+			            <article class="docs-article" id="section-3">
+			     	    <header class="docs-header">
+					    <h1 class="docs-heading">APIs</h1>
+					    <section class="docs-intro">
+						    <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
+						</section><!--//docs-intro-->
+				        </header>
+				        <section class="docs-section" id="item-3-1">
+						<h2 class="section-heading">Section Item 3.1</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-3-2">
+						<h2 class="section-heading">Section Item 3.2</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-3-3">
+						<h2 class="section-heading">Section Item 3.3</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    <article class="docs-article" id="section-4">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Intergrations</h1>
+					    <section class="docs-intro">
+						    <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-4-1">
+						<h2 class="section-heading">Section Item 4.1</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-4-2">
+						<h2 class="section-heading">Section Item 4.2</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-4-3">
+						<h2 class="section-heading">Section Item 4.3</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    <article class="docs-article" id="section-5">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Utilities</h1>
+					    <section class="docs-intro">
+						    <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-5-1">
+						<h2 class="section-heading">Section Item 5.1</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-5-2">
+						<h2 class="section-heading">Section Item 5.2</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-5-3">
+							<h2 class="section-heading">Section Item 5.3</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			   
+			    
+		                <article class="docs-article" id="section-6">
+				        <header class="docs-header">
+					    <h1 class="docs-heading">Devlopment</h1>
+					    <section class="docs-intro">
+						<p> Ubuntu is the result of contributions by thousands of developers, motivated by the desire to create their own perfect developer environment. That’s why it’s used by some of the world’s most exciting technology companies and it’s why Valve decided to port its hugely popular Steam virtual games store to Ubuntu. Ubuntu runs on architectures from x86 to ARM and on cloud platforms from OpenStack to Azure and EC2. This versatility makes it the ideal choice for companies with a diverse hardware infrastructure.</p>
+					    <img class="map" src="assets/images/Developer 1.png" height = "500" width = "800"  > </img>
+						</section><!--//docs-intro-->
+						
+						
+				        </header>
+				        <section class="docs-section" id="item-6-1">
+						<h2 class="section-heading">Ubuntu Desktop for developers</h2>
+						<p>Whether you’re a mobile app developer, an engineering manager, a music or video editor or a financial analyst with large-scale models to run — in fact, anyone in need of a powerful machine for your work — Ubuntu is the ideal platform.</p>
+				     	</section><!--//section-->
+					
+				    	<section class="docs-section" id="item-6-2">
+						<h2 class="section-heading">Why use Ubuntu for development?</h2>
+						<p><li>The fastest route from development to deployment on desktop, mobile, server or cloud 
+						<li>The broadest and best development tools and libraries 
+						<li>All the most popular productivity apps such as Slack, Skype, Telegram and Discord, available in the snap store 
+						<li>Official snaps for Visual Studio Code and the JetBrains suite of IDEs 
+						<li>Hassle free gaming and AI development with nVIDIA GPUs supported out the box 
+						<li>Certified AI and developer laptops and workstations available from Dell, Lenovo and HP — get a seamless, pre-installed Ubuntu experience 
+						<li>Lightweight; run natively or in a VMIdeal for any resource-intensive environment, from data mining to large-scale financial modelling 
+						<li>66% of experienced developers prefer Ubuntu</li></p>
+					    </section><!--//section-->
+					
+				     	<section class="docs-section" id="item-6-3">
+							<h2 class="section-heading">With Ubuntu, you’re in good company</h2>
+						<p>Ubuntu is used by thousands of development teams around the world because of its versatility, reliability, constantly updated features, and extensive developer libraries.</p>
+
+                        <p>If you’re managing developers, Ubuntu is the best way to increase your team’s productivity and guarantee a smooth transition from development all the way to production. Ubuntu is the world’s most popular open source OS for both development and deployment, from the data centre to the cloud to the Internet of Things.</p>
+						<img class="map" src="assets/images/Developer 2.jpeg" height = "500" width = "800"  > </img>
+				       	</section><!--//section-->
+		     	        </article><!--//docs-article-->
+						
+						 <section class="docs-section" id="item-6-4">
+						<h2 class="section-heading">All the tools developers need</h2>
+						<p>Whether your team uses Python, Ruby, Node.js or Java, no operating system is easier to set up than Ubuntu. Everything your developers need is just a snap or an apt away.</p>
+
+                        <p>Want to get your app published for Ubuntu? Snapcraft can help you reach all users of current Ubuntu versions and other popular distributions.</p>
+						
+						<p>We want to be able to deliver the same high-quality experience on Linux as we do on other platforms. Snaps allow us to do just that, by giving us the ability to push the latest features straight to our users, no matter what device or distribution they happen to use.</p>
+						<img class="map" src="assets/images/Developer 3.png" height = "500" width = "800"  > </img>
+						
+						 <section class="docs-section" id="item-6-5">
+						<h2 class="section-heading">Deployment made easy</h2>
+						<p>When it comes to speed and simplicity of deployment, nothing touches Ubuntu.</p>
+
+                        <p>Taking a service developed on the desktop and running it on a server or in the cloud just works. Ubuntu also has developed Juju, a service orchestration tool, that simplifies the often-cumbersome handover between development and ops teams — and it speeds the process up dramatically.</p>
+						
+						 <section class="docs-section" id="item-6-6">
+						<h2 class="section-heading">Support tailored to developers’ needs</h2>
+						<p>With Ubuntu Advantage and Landscape, you can standardise your developer workstations. It helps you manage updates, security patches, and reporting, while minimising downtime. Give your developers the freedom they want while retaining the control you need.</p>
+						
+						
+				     	</section><!--//section-->
+					
+			    
+			      
+			             <article class="docs-article" id="section-7">
+				        <header class="docs-header">
+					    <h1 class="docs-heading">Uses of Ubuntu</h1>
+					    <section class="docs-intro">
+						    <p>Below are the Top 12 Uses of Ubuntu which are as follows:</p>
+							<img class="map" src="assets/images/Uses 1.png" height = "600" width = "1000"  > </img>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-7-1">
+						<h2 class="section-heading">1. Free of Cost</h2>
+						<p>Downloading and installing Ubuntu is free, and costs only time to install it. One can just download from the internet or can create an ISO bootable disk, and after it, the environment is ready to launch. With the help of Ubuntu, one can revive old, unused or any low-performance computer system without any investment. Also, troubleshooting does not cause any penny. And one can do this with the help of the Linux environment.</p>
+
+                        <p>It also consists of its own Office suite, named as LibreOffice. This prevents our pocket by not letting us purchasing costly licensed suites such as MS Office and others.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-7-2">
+						<h2 class="section-heading">2. Privacy</h2>
+					    <p>In comparison to Windows, Ubuntu provides a better option for privacy and security. The best advantage of having Ubuntu is that we can acquire the required privacy and additional security without having any third party solution. Risk of hacking and various other attacks can be minimized by using this distribution.</p>
+				    	</section><!--//section-->
+					
+				    	<section class="docs-section" id="item-7-3">
+							<h2 class="section-heading">3. Working with Partitions of hard drives</h2>
+						<p>Linux live CD and Gparted enables to divide the hard disk into partitions. This feature is also applicable when your system is a dual or triple boot. Otherwise, the partition is helpful in migration to solid state drive or more spacious drive. Apart from this, wiping of data can be easily done in Ubuntu.</p>
+				     	</section><!--//section-->
+						
+							<section class="docs-section" id="item-7-4">
+							<h2 class="section-heading">4. Free Apps</h2>
+						<p>Ubuntu provides a lot of free apps to explore the world of opportunities, refreshments, and enjoyment. Following are few apps of total listed for reference:</p>
+						<p><li>Spotify: Used for stream songs for free. Also allow creating playlists, albums of favorite songs.0
+                        <li>Skype: Used for instant messaging, high-quality video and voice calls.
+                        <li>VLC: A single media player, compatible with various media file formats.
+                        <li>Firefox: Fast Browser with better efficiency and 30% lighter than Chrome.
+                        <li>Slack: Software for teamwork and collaboration enables one place to get work done easily and smoothly.
+                        <li>Atom: A Text Editor for the modern generation with a feature of handling all types of document’s format.
+                        <li>Pycharm: An attractive IDE for programming that includes all important tools for Python coding, along with exciting in-app features.
+                        <li>Telegram: A mobile synchronized desktop app for faster and secure messaging.</li></p>
+				     	</section><!--//section-->
+						
+						<section class="docs-section" id="item-7-5">
+							<h2 class="section-heading">5. User-Friendly</h2>
+						<p>Ubuntu is as easy as the Windows operating system. There is a well-known myth about Ubuntu is that Ubuntu is developed for developers and coders only. But the actual fact is, Ubuntu is a beautiful desktop operating system and can be used by any common computer user.</p>
+				     	</section><!--//section-->
+					
+						<section class="docs-section" id="item-7-6">
+							<h2 class="section-heading">6. Accessibility</h2>
+						<p>Another great feature of Ubuntu is its ease of use. The user can easily work with various CMS of PHP such as Laravel, Magneto, WordPress and many more. Apart from PHP, Ruby, Java, Python can easily be implemented in Ubuntu. Users experience a beautiful design of desktop while accessing Ubuntu that is quite easy and efficient to use.</p>
+				     	</section><!--//section-->
+						
+						<section class="docs-section" id="item-7-7">
+							<h2 class="section-heading">7. Home Automation</h2>
+						<p>Little knowledge of Linux and a minicomputer such as Raspberry Pi, is all to create small home automation gadget. One click or press or hold enables various devices and system of your house to run automatically without human intervention.</p>
+				     	</section><!--//section-->
+						
+						<section class="docs-section" id="item-7-8">
+							<h2 class="section-heading">8. Say Bye to Antivirus</h2>
+						<p>Risk of having a virus or malware is minimal, that reduces the cost of anti-virus software. Antivirus is also a reason for the slowness of the computer system and affects performance badly. Also, this may cause the system to not function efficiently. Apart from this issue, anti-virus also acquires a lot of space in our system. But with Ubuntu, all these risks and problems can be neglected in an affordable manner.</p>
+				     	</section><!--//section-->
+						
+						<section class="docs-section" id="item-7-9">
+							<h2 class="section-heading">9. Say Bye to Pirated Software</h2>
+						<p>As stated, It is free, this also includes a lot of free software embedded with the system. However, some windows based programs require alternate options such as virtual machine because it creates compatibility issues in Linux based servers. Access to official software, not only provides security and prevents bugs, but it also saves money that is going to be spent on purchasing pirated software.</p>
+				     	</section><!--//section-->
+						
+						<section class="docs-section" id="item-7-10">
+							<h2 class="section-heading">10. Free games</h2>
+						<p>A compatibility layer, commonly known as WINE is the most popular program used to run windows based games and applications on Linux based operating system. Many games from the distribution are open source and hence does not require any extra cost to install in our system.</p>
+				     	</section><!--//section-->
+						
+						<section class="docs-section" id="item-7-11">
+							<h2 class="section-heading">11. PC performance</h2>
+						<p>Performance of a system depends on what kind of usage is. For example, if the system is used for coding, designing, testing issues or for business purposes, or for just simply use of a computer system, It is recommended. Some reasons behind this are, Ubuntu boots faster than Windows, gets less infected, provides various free of cost IDEs. Otherwise, if gaming purpose is considered, Windows and MAC are way ahead than Ubuntu.</p>
+				     	</section><!--//section-->
+						
+						<section class="docs-section" id="item-7-12">
+							<h2 class="section-heading">12. Free upgrades</h2>
+						<p>All the upgrades provided by Ubuntu are free of cost. And they are released every six months. Upgrades are installed automatically but only with user permission and user are aware of installing. And while installing, the user does not need to bother losing data or redoing it. Distribution is itself capable of handling the system well.</p>
+				     	</section><!--//section-->
+						
+						<section class="docs-section" id="item-7-10">
+							<h2 class="section-heading">Conclusion</h2>
+						<p>Ubuntu is an open source desktop operating system that is freely available and can be downloaded and installed without any hassle. Ubuntu comes with a variety of features that make it more competitive than other distribution. The number of variations in functionalities of Ubuntu, make it useful for the developer as well as the common user.</p>
+				     	</section><!--//section-->
+						
+						<section class="docs-section" id="item-7-10">
+							<h2 class="section-heading">Recommended Articles</h2>
+						<p>This has been a guide to Uses of Ubuntu. Here we have explained the different uses of Ubuntu with examples. You can also go through our other suggested articles to learn more –</p>
+				     	</section><!--//section-->
+						
+						
+						
+			            </article><!--//docs-article-->
+			    
+			    
+			            <article class="docs-article" id="section-8">
+				        <header class="docs-header">
+			 		    <h1 class="docs-heading">Resources</h1>
+					    <section class="docs-intro">
+						    <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
+						</section><!--//docs-intro-->
+				        </header>
+				        <section class="docs-section" id="item-8-1">
+						<h2 class="section-heading">Section Item 8.1</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+				    	</section><!--//section-->
+					
+				    	<section class="docs-section" id="item-8-2">
+						<h2 class="section-heading">Section Item 8.2</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+				    	</section><!--//section-->
+					
+				    	<section class="docs-section" id="item-8-3">
+							<h2 class="section-heading">Section Item 8.3</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    
+			    <article class="docs-article" id="section-9">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">FAQs</h1>
+					    <section class="docs-intro">
+						    <p>It’s the end of the year, we met with lots of people from all around the world, at various conferences and events and wherever they were from and whatever their role in IT was, the same questions always seem to come back.</p>
+							<p>So we thought we’d list the top 10 questions we get, here, for you, with the answers.</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-9-1">
+						<h2 class="section-heading">Top 10 questions about Ubuntu <small>(FAQ Category One)</small></h2>
+						
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>1.Is there a company behind Ubuntu?</h5>
+						<p>Canonical is the company behind Ubuntu.
+                           We work with the open-source community to deliver Ubuntu. Our related enterprise services are also used by businesses and large enterprises worldwide to reduce costs and improve efficiency.</p>
+						
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>2.How is Ubuntu not affected by viruses?</h5>
+						<p>Almost all viruses and malware are coded to take advantage of weaknesses in Windows. They simply won’t run on Ubuntu, immediately decimating the amount of time, resource and expense you invest in protecting your desktops (not to mention cleaning them up if something nasty does strike).For a more detailed answer, we’d recommend this article, it goes through some interesting facts on why Linux in general is more secure than Windows. </p>
+						
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>3.If Ubuntu is free, what’s in Ubuntu Advantage? </h5>
+						<p>Ubuntu Advantage is Canonical enterprise services offering: it includes our systems management tool – Landscape – and support (access to the Canonical Support Services team) to help enterprises make the most of their Ubuntu experience. This offering was specifically designed to make your IT more efficient and reduce costs for large deployments.</p>
+						
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>4.What’s the largest desktop migration to Ubuntu so far?</h5>
+						<p>85,000 desktops. La Gendarmerie Nationale, part of the French police force, faced growing IT infrastructure costs and decided to review its existing Microsoft-based environment. After switching from Microsoft Office to OpenOffice.org and from Internet Explorer to Firefox, the police force decided to upgrade 85,000 desktop PCs to Ubuntu, removing its reliance on the Microsoft operating system almost completely. As well as simplifying maintenance and improving ease of use, Ubuntu is saving the police force €2 million a year in licence fees alone. By repurposing 4,500 machines to act as local servers, it has also dramatically reduced its hardware expenditure.The police force’s IT team tested a number of operating systems but found Ubuntu to be the best fit for the organisation. </p>
+						
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>5.How do we do compliance for Ubuntu? </h5>
+						<p>As any IT manager knows, compliance is about more than reporting. It starts with the implementation of compliance policies and processes.</p>
+                        <p>The latest version of Landscape, Canonical’s systems management tool, introduces extensive access-control extensions, enabling you to implement the access policies you need.</p>
+                        <p>Roles such as ‘Auditor’ (with read access to everything but write access to nothing) or ‘Security Analyst’ (with authentication to execute scripts but not modify them or create new ones) can be defined, right up to the restriction-free ’Full Administrator’ level. Fine-grained control over these credentials is provided, with a default configuration included to ensure that these features can be used without customisation. Meanwhile, CIOs will appreciate the ability to define independent security administrator roles when needed.Landscape produces standardised compliance reports, showing which machines are up-to-date with security patches. Machines are clearly shown as compliant or non-compliant. For non-compliant machines, further detail is also available, including the total number of days for which they have been non-compliant (or out of contact with the Landscape server). The speed with which they are brought into compliance is also tracked, to accelerate the audit process.</p>
+						
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>6.What’s Canonical’s role in OpenStack?</h5>
+						<p>Ubuntu is the reference operating system for OpenStack, the world’s number one open source cloud infrastructure platform.
+                        The relationship between Ubuntu and OpenStack is a deep one. The release schedules of the two projects are synchronised, ensuring that OpenStack updates and releases are immediately available on widely deployed releases of Ubuntu. But most important is Ubuntu’s status as the reference OS. This means Ubuntu is the preferred base operating system, the one that most developers of OpenStack use every day. No other operating system is as therefore as tightly integrated with OpenStack – or as stringently tested with the cloud software. In short, if you want to run OpenStack (and if you’re interested in open cloud infrastructure, you definitely should be) then the best advice is to do so on Ubuntu.</p>
+						
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>7.Why is Ubuntu the most popular operating system for cloud?</h5>
+						<p>Large enterprises such as HP, Microsoft, Rackspace, IBM and DreamHost provide Ubuntu images in their public cloud infrastructure, or run it for their own private and public clouds.
+                        Ubuntu is the number one operating system on Amazon Web Services and has been closely involved with OpenStack since the very beginning of the project. We can therefore provide engineering, consultancy and support expertise to help with any cloud project, whether you want to run your services on a major public cloud (OpenStack-based or otherwise) or build private cloud infrastructure on your own hardware.
+                        </p>
+						
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>8.How do I train as an Ubuntu system administrator</h5>
+						<p>Canonical organise tailored training workshops depending on our customers’ needs.What’s more, a webinar series will be available in early 2013 to teach you the basics on Ubuntu.</p>
+						
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>9.Can Ubuntu be integrated with Microsoft infrastructure?</h5>
+						<p>Yes it can. You can do the work yourself, or you can work with Canonical consultants. Another solution would be to use a third-party technology designed to do just this: you can either migrate your MS servers to Ubuntu-based products such as Zentyal Enterprise Edition or connect your Ubuntu environment to your legacy Microsoft infrastructure using products like Centrify.</p>
+						
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>10.What does Ubuntu mean?</h5>
+						<p>Ubuntu is an ancient African word meaning ‘humanity to others’. It can also be interpreted as ‘I am what I am because of who we all are’. The Ubuntu operating system brings the spirit of Ubuntu to the world of computing. And one last extra question for the road…</p>
+						
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-9-2">
+						<h2 class="section-heading">Section Item 9.2 <small>(FAQ Category Two)</small></h2>
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>What's sit amet quam eget lacinia?</h5>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>How to ipsum dolor sit amet quam tortor?</h5>
+						<p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Can I  bibendum sodales?</h5>
+						<p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Where arcu sed urna gravida?</h5>
+						<p>Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo. Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec arcu sed urna gravida lobortis. Donec lectus est, imperdiet eu viverra viverra, ultricies nec urna. </p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-9-3">
+							<h2 class="section-heading">Section Item 9.3 <small>(FAQ Category Three)</small></h2>
+						    <h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>How to dapibus sollicitudin justo vel fermentum?</h5>
+							<p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
+							<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>How long bibendum sodales?</h5>
+							<p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
+							<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Where dapibus sollicitudin?</h5>
+							<p>Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo. Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec arcu sed urna gravida lobortis. Donec lectus est, imperdiet eu viverra viverra, ultricies nec urna. </p>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+
+			    <footer class="footer">
+				    <div class="container text-center py-5">
+				        <small class="copyright">Designed with <i class="fas fa-heart" style="color: #fb866a;"></i> by <a class="theme-link" href="http://naemazam.github.io" target="_blank">AL SAD</a> for developers</small>
+				        <ul class="social-list list-unstyled pt-4 mb-0">
+						    <li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li> 
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>
+				        </ul><!--//social-list-->
+				    </div>
+			    </footer>
+		    </div> 
+	    </div>
+    </div><!--//docs-wrapper-->
+    
+   
+       
+    <!-- Javascript -->          
+    <script src="assets/plugins/jquery-3.4.1.min.js"></script>
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    
+    
+    <!-- Page Specific JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="assets/js/highlight-custom.js"></script> 
+    <script src="assets/plugins/jquery.scrollTo.min.js"></script>
+    <script src="assets/plugins/lightbox/dist/ekko-lightbox.min.js"></script> 
+    <script src="assets/js/docs.js"></script> 
+
+</body>
+</html> 
+
